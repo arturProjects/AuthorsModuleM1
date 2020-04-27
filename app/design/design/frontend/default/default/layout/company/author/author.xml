@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <Company_authors_author_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="Company_authors/author" name="author.index" template="Company/author/author.phtml" />
+        </reference>
+    </Company_authors_author_index>
+</layout>

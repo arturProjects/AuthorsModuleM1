@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <authors translate="title" module="Company_authors">
+                    <title>Autorzy</title>
+                    <sort_order>40</sort_order>
+                    <action>adminhtml/authors</action>
+                </authors>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <authors translate="title" module="Company_authors">
+                        <title>Autorzy</title>
+                        <sort_order>60</sort_order>
+                        <children>
+                            <authors translate="title">
+                                <title>Autorzy</title>
+                            </authors>
+                        </children>
+                    </authors>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
